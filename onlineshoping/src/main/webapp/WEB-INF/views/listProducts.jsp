@@ -40,7 +40,7 @@
 							window.categoryId = '${category.id}';
 						</script>
 					
- 						<ol class="breadcrumb">
+						<ol class="breadcrumb">
 
 
 							<li><a href="${contextRoot}/home">Home</a></li>

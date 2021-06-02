@@ -40,6 +40,8 @@ public class ManagementController {
 	@Autowired
 	private CategoryDAO categoryDAO;		
 
+	
+	
 	@RequestMapping("/product")
 	public ModelAndView manageProduct(@RequestParam(name="success",required=false)String success) {		
 
@@ -69,6 +71,9 @@ public class ManagementController {
 		return mv;
 		
 	}
+
+		
+	
 
 	
 	@RequestMapping("/{id}/product")

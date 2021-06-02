@@ -94,7 +94,8 @@
 			<!-- Load only when user clicks manage product -->
 			<c:if test="${userClickManageProduct == true}">
 				<%@include file="manageProduct.jsp"%>
-			</c:if>	
+			</c:if>
+				
 
 			<!-- Load only when user clicks manage product -->
 			<c:if test="${userClickShowCart == true}">

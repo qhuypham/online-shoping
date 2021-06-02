@@ -71,7 +71,7 @@
                             <h5>{{product.name}}</h5>
                             <hr/>
                             <div class="caption">
-                                <h4 class="pull-right">&#8377; {{product.unitPrice}}</h4>
+                                <h4 class="pull-right"> {{product.unitPrice}} &#8363;</h4>
                                 <p>{{product.description}}</p>
                                 <a ng-href="${contextRoot}/show/{{product.id}}/product" class="btn btn-primary pull-right">View</a>
                             </div>
@@ -101,7 +101,7 @@
                             <h5>{{product.name}}</h5>
                             <hr/>
                             <div class="caption">
-                                <h4 class="pull-right">&#8377; {{product.unitPrice}}</h4>
+                                <h4 class="pull-right"> {{product.unitPrice}} &#8363;</h4>
                                 <p>{{product.description}}</p>
                                 <a ng-href="${contextRoot}/show/{{product.id}}/product" class="btn btn-primary pull-right">View</a>
                             </div>

@@ -44,11 +44,11 @@
 								</div>
 							</div>
 						</td>
-						<td data-th="Price"> &#8377; ${cartLine.buyingPrice} /-</td>
+						<td data-th="Price">  ${cartLine.buyingPrice} &#8363;</td>
 						<td data-th="Quantity">
 							<input type="number" id="count_${cartLine.id}" class="form-control text-center" value="${cartLine.productCount}" min="1" max="3">
 						</td>
-						<td data-th="Subtotal" class="text-center">&#8377; ${cartLine.total} /-</td>
+						<td data-th="Subtotal" class="text-center"> ${cartLine.total} &#8363;</td>
 						<td class="actions" data-th="">
 							<c:if test="${cartLine.available == true}">
 								<button type="button" name="refreshCart" class="btn btn-info btn-sm" value="${cartLine.id}"><span class="glyphicon glyphicon-refresh"></span></button>
@@ -65,7 +65,7 @@
 					<tr>
 						<td><a href="${contextRoot}/show/all/products" class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left"></span> Continue Shopping</a></td>
 						<td colspan="2" class="hidden-xs"></td>
-						<td class="hidden-xs text-center"><strong>Total &#8377; ${userModel.cart.grandTotal}/-</strong></td>
+						<td class="hidden-xs text-center"><strong>Total ${userModel.cart.grandTotal} &#8363;</strong></td>
 						
 						<c:choose>
 							<c:when test="${availableCount != 0}">

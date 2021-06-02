@@ -4,7 +4,9 @@
 		
 		<h1>Contact Us</h1>
 		<hr/>
-		<p>This is an contact us page</p>	
+		<p>Pham Quoc Huy - 17106351</p>	
+		<p>Van Huu Nghia - 17106351</p>	
+		<p> - 17106351</p>	
 	
 	</div>
 

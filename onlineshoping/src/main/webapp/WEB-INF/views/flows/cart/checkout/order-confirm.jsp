@@ -139,9 +139,9 @@
 		    							<c:forEach items="${orderDetail.orderItems}" var="orderItem">
 			    							<tr>
 			    								<td>${orderItem.product.name}</td>
-			    								<td class="text-center">&#8377; ${orderItem.buyingPrice}</td>
-			    								<td class="text-center">${orderItem.productCount}</td>
-			    								<td class="text-right">&#8377; ${orderItem.total}</td>
+			    								<td class="text-center"> ${orderItem.buyingPrice} &#8363;</td>
+			    								<td class="text-center">${orderItem.productCount} </td>
+			    								<td class="text-right">${orderItem.total} &#8363;</td>
 			    							</tr>
 		    							</c:forEach>
 		    						</tbody>

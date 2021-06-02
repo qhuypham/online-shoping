@@ -44,7 +44,7 @@
 			<p>${product.description}</p>
 			<hr/>
 			
-			<h4>Price: <strong> &#8377; ${product.unitPrice} /-</strong></h4>
+			<h4>Price: <strong> ${product.unitPrice} &#8363;</strong></h4>
 			<hr/>
 			
 			

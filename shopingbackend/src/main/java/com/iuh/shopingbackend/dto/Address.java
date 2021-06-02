@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -33,7 +34,7 @@ public class Address implements Serializable {
 	@NotBlank(message = "Please enter country!")	
 	private String country;
 	@Column(name ="postal_code")
-	@NotBlank(message = "Please enter Postal Code!")	
+	@Pattern(regexp="[\\d]{6}", message="This field should contain 6 digits!")	
 	private String postalCode;
 	@Column(name="is_shipping")
 	private boolean shipping;

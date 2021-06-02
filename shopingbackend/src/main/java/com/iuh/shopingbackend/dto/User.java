@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -35,7 +36,7 @@ public class User implements Serializable{
 	private String lastName;
 	@NotBlank(message = "Please enter email address!")	
 	private String email;
-	@NotBlank(message = "Please enter contact number!")
+	@Pattern(regexp="[\\d]{9}", message="This field should contain 9 digits!")
 	@Column(name = "contact_number")
 	private String contactNumber;
 	private String role;

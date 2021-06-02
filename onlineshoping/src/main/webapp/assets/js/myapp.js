@@ -35,6 +35,9 @@ $(function() {
 	case 'Product Management':
 		$('#manageProduct').addClass('active');
 		break;
+	case 'User Management':
+		$('#manageUser').addClass('active');
+		break;
 	case 'Shopping Cart':
 		$('#userModel').addClass('active');
 		break;		
@@ -92,7 +95,7 @@ $(function() {
 							{
 								data : 'unitPrice',
 								mRender : function(data, type, row) {
-									return '&#8377; ' + data
+									return data + '&#8363'
 								}
 							},
 							{
@@ -272,7 +275,7 @@ $(function() {
 				});
 	}
 	
-	
+
 	
 	
 	// jQuery Validation Code

@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [onlineshopping]    Script Date: 5/31/2021 1:42:13 PM ******/
+/****** Object:  Database [onlineshopping]    Script Date: 6/2/2021 1:27:06 PM ******/
 CREATE DATABASE [onlineshopping]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,10 +82,10 @@ ALTER DATABASE [onlineshopping] SET QUERY_STORE = OFF
 GO
 USE [onlineshopping]
 GO
-/****** Object:  User [sb]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  User [sb]    Script Date: 6/2/2021 1:27:06 PM ******/
 CREATE USER [sb] FOR LOGIN [sb] WITH DEFAULT_SCHEMA=[dbo]
 GO
-/****** Object:  Table [dbo].[address]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[address]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -107,7 +107,7 @@ CREATE TABLE [dbo].[address](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[cart]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[cart]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -123,7 +123,7 @@ CREATE TABLE [dbo].[cart](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[cart_line]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[cart_line]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -142,7 +142,7 @@ CREATE TABLE [dbo].[cart_line](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[category]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[category]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -159,7 +159,7 @@ CREATE TABLE [dbo].[category](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[order_detail]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[order_detail]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -178,7 +178,7 @@ CREATE TABLE [dbo].[order_detail](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[order_item]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[order_item]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -196,7 +196,7 @@ CREATE TABLE [dbo].[order_item](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[product]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[product]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -220,7 +220,7 @@ CREATE TABLE [dbo].[product](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[user_detail]    Script Date: 5/31/2021 1:42:14 PM ******/
+/****** Object:  Table [dbo].[user_detail]    Script Date: 6/2/2021 1:27:06 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
